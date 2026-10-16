@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 幻服
+  name: ༺❀ൢ 幻想天域 ൢ❀༻
   text: MC 服务器介绍与史书
   tagline: 一个方块，一段故事；服务器的记忆，由我们共同书写。
   actions:
