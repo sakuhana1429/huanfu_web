@@ -1,0 +1,32 @@
+# Sveltia CMS 配置
+# 注意：第 3 步创建 GitHub 仓库后，把 repo 改成「你的用户名/仓库名」
+backend:
+  name: github
+  repo: owner/repo
+  branch: main
+
+media_folder: docs/public/images
+public_folder: /images
+
+collections:
+  - name: intro
+    label: 服务器介绍
+    files:
+      - name: intro
+        label: 介绍正文
+        file: docs/intro.md
+        fields:
+          - { name: title, label: 标题, widget: string }
+          - { name: body, label: 正文, widget: markdown }
+
+  - name: history
+    label: 服务器史书
+    folder: docs/history
+    create: true
+    slug: '{{slug}}'
+    path: '{{slug}}'
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: 章节标题, widget: string }
+      - { name: body, label: 正文, widget: markdown }

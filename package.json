@@ -1,0 +1,16 @@
+{
+  "name": "huanfu-web",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "幻服 MC 服务器介绍与服务器史书网站",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs && pagefind --site docs/.vitepress/dist",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "pagefind": "^1.3.0",
+    "vitepress": "^1.6.3"
+  }
+}
