@@ -21,6 +21,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '服务器介绍', link: '/intro' },
       { text: '服务器史书', link: '/history/' },
+      { text: '作物数据', link: '/crops' },
       { text: '后台管理', link: '/admin/' }
     ],
     sidebar: {
@@ -46,6 +47,12 @@ export default defineConfig({
         {
           text: '服务器介绍',
           items: [{ text: '欢迎来到幻服', link: '/intro' }]
+        }
+      ],
+      '/crops': [
+        {
+          text: '服务器资料',
+          items: [{ text: '作物种植数据', link: '/crops' }]
         }
       ]
     },
