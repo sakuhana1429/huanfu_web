@@ -27,7 +27,20 @@ export default defineConfig({
     sidebar: {
       '/history/': [
         {
-          text: '服务器史书',
+          text: '第二卷 · 服管时期',
+          items: [
+            { text: '卷首 · 前言', link: '/history/vol2/' },
+            { text: '第一章 · 行政制度', link: '/history/vol2/01-行政制度' },
+            { text: '第二章 · 经济制度', link: '/history/vol2/02-经济制度' },
+            { text: '第三章 · 公会制度', link: '/history/vol2/03-公会制度' },
+            { text: '第四章 · 特殊事件', link: '/history/vol2/04-特殊事件' },
+            { text: '第五章 · 玩法更新', link: '/history/vol2/05-玩法更新' },
+            { text: '第六章 · 玩家纪录', link: '/history/vol2/06-玩家纪录' },
+            { text: '第七章 · 违规记录', link: '/history/vol2/07-违规记录' }
+          ]
+        },
+        {
+          text: '第一卷 · 框架（待补写）',
           items: [
             { text: '总目录', link: '/history/' },
             { text: '〇〇 · 前言', link: '/history/00-前言' },
