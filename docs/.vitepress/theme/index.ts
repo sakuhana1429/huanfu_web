@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import SearchBox from './SearchBox.vue'
+import './custom.css'
 
 export default {
   extends: DefaultTheme,

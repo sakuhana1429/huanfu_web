@@ -1,0 +1,161 @@
+/* ===== 幻服史书 · Word 格式还原 =====
+   字体 / 字号 / 颜色 / 高亮 / 表格 / 旁注框
+   字号基准：Word sz=22(11pt) = 16px，其余按 1.09 倍逐级放大 */
+
+/* ---------- 字体 ---------- */
+.f-song  { font-family: "SimSun", "宋体", "Songti SC", serif; }
+.f-kai   { font-family: "KaiTi", "楷体", "Kaiti SC", "STKaiti", serif; }
+.f-hwzs  { font-family: "STZhongsong", "华文中宋", "SimSun", "宋体", serif; }
+.f-hei   { font-family: "SimHei", "黑体", "Heiti SC", sans-serif; }
+.f-fs    { font-family: "FangSong", "仿宋", "STFangsong", serif; }
+.f-dx    { font-family: "DengXian", "等线", "Microsoft YaHei", sans-serif; }
+.f-hws   { font-family: "STSong", "华文宋体", "SimSun", "宋体", serif; }
+.f-yahei { font-family: "Microsoft YaHei", "微软雅黑", sans-serif; }
+.f-emoji { font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif; }
+
+/* ---------- 字号 ---------- */
+.s11 { font-size: 16px; }
+.s12 { font-size: 17.5px; }
+.s14 { font-size: 20.4px; }
+.s16 { font-size: 23.3px; }
+.s18 { font-size: 26.2px; }
+.s20 { font-size: 29.1px; }
+.s22 { font-size: 32px; }
+.s24 { font-size: 34.9px; }
+
+/* ---------- 字形 ---------- */
+.b { font-weight: 700; }
+.i { font-style: italic; }
+.u { text-decoration: underline; }
+
+/* ---------- 字色 ---------- */
+.c-black   { color: #000000; }
+.c-white   { color: #ffffff; }
+.c-green   { color: #00B050; }
+.c-blue    { color: #0039AC; }
+.c-red     { color: #EE0000; }
+.c-magenta { color: #FF00FF; }
+.c-lblue   { color: #00B0F0; }
+.c-purple  { color: #CC00CC; }
+.c-red2    { color: #FF0000; }
+.c-dred    { color: #C00000; }
+.c-blue2   { color: #0066FF; }
+.c-pink    { color: #FF66FF; }
+.c-navy    { color: #000099; }
+.c-azure   { color: #0070C0; }
+.c-blue3   { color: #0000FF; }
+.c-orchid  { color: #D86DCB; }
+.c-orange  { color: #E97132; }
+.c-violet  { color: #7030A0; }
+.c-teal    { color: #009999; }
+.c-lime    { color: #92D050; }
+
+/* ---------- 底纹高亮 ---------- */
+.hl-black    { background: #000000; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-dblue    { background: #00008B; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-blue     { background: #0000FF; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-dmagenta { background: #8B008B; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-magenta  { background: #FF00FF; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-red      { background: #FF0000; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-dred     { background: #8B0000; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-yellow   { background: #FFFF00; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-cyan     { background: #00FFFF; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-dcyan    { background: #008B8B; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-dgreen   { background: #006400; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-green    { background: #00FF00; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-dyellow  { background: #808000; color: #ffffff; padding: 1px 3px; border-radius: 2px; }
+.hl-white    { background: #ffffff; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-dgray    { background: #A9A9A9; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+.hl-lgray    { background: #D3D3D3; color: #1a1a1a; padding: 1px 3px; border-radius: 2px; }
+
+/* ---------- 段落 ---------- */
+.ct { text-align: center; }
+.shd { padding: 6px 10px; border-radius: 4px; }
+
+/* ---------- 列表 ---------- */
+.vp-doc ul.hist-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+.vp-doc ul.hist-list li {
+  margin: 4px 0;
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+  line-height: 1.8;
+}
+
+/* ---------- 表格 ---------- */
+.hist-table-wrap {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+.vp-doc table.hist-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 15px;
+}
+.vp-doc table.hist-table th,
+.vp-doc table.hist-table td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+.vp-doc table.hist-table th {
+  background: #0039AC;
+  color: #ffffff;
+  font-weight: 600;
+}
+.vp-doc table.hist-table th p,
+.vp-doc table.hist-table td p {
+  margin: 4px 0;
+  line-height: 1.7;
+}
+.vp-doc table.hist-table tbody tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* ---------- 旁注框（史料补充 / 笔者随笔 / 拓展） ---------- */
+.note-box {
+  border-left: 4px solid #e6a23c;
+  background: #fff8e6;
+  padding: 10px 14px;
+  margin: 14px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.note-box p {
+  margin: 4px 0;
+}
+
+/* ---------- 正文图片 ---------- */
+.vp-doc img[loading="lazy"] {
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+  margin: 10px 0;
+}
+
+/* ---------- 深色模式 ---------- */
+html.dark .c-black  { color: #e6e6e6; }
+html.dark .c-navy   { color: #8fa8ff; }
+html.dark .c-blue   { color: #7fa3e8; }
+html.dark .c-blue3  { color: #8fa8ff; }
+html.dark .c-dred   { color: #ff8a8a; }
+html.dark .c-violet { color: #c39bea; }
+html.dark .c-teal   { color: #4dd0d0; }
+html.dark .note-box { background: #2a2416; border-left-color: #c98b23; }
+html.dark .vp-doc table.hist-table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.03);
+}
+/* 浅色底纹上强制深色字，避免深色模式反色后不可读 */
+html.dark .hl-yellow,
+html.dark .hl-cyan,
+html.dark .hl-white,
+html.dark .hl-dgray,
+html.dark .hl-lgray,
+html.dark .hl-magenta,
+html.dark .hl-green { color: #1a1a1a; }
